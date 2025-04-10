@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ol>
+      <li>
+        <h4>Picture</h4>
+
+        <p>I use the flowers below to intoduce myself</p>
+        <picture>
+          <source
+            media="(min-width:650px)"
+            srcset="./images/large_flowers.jpg"
+          />
+          <source
+            media="(min-width:465px)"
+            srcset="./images/medium_flower.jpg"
+          />
+          <img src="./images/default_flowers.jpg" alt="Cosmas flowers" />
+        </picture>
+      </li>
+      <li>
+        <h4>Audio</h4>
+        <audio controls>
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <h4>Video</h4>
+      <video width="320" height="240" controls>
+        <source
+          src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </ol>
+    <p>Back to <a href="./table.html">schools in Altschool Africa</a></p>
+  </body>
+</html>
