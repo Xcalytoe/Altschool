@@ -1,0 +1,129 @@
+:root {
+  --white: white;
+  --dark-100: #242530;
+  --dark-200: #3a3f77;
+  --black: #000000;
+  --gray: #b2b2b2;
+  --orange: #f39c12;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.calculator-box {
+  background: var(--dark-100);
+  padding: 25px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.calculator-box__display {
+  height: 70px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 20px;
+  background: var(--dark-200);
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 400;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+.btn-numbers {
+  flex-grow: 1;
+  flex-basis: 206px;
+}
+.btn-operators {
+  flex-basis: 116px;
+  max-width: 116px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex {
+  display: flex;
+}
+.gap-20 {
+  gap: 15px;
+}
+.gap-15 {
+  gap: 12px;
+}
+.gap-x-12 {
+  column-gap: 12px !important;
+}
+.size-24 {
+  font-size: 24px !important;
+}
+.buttons-container {
+  align-items: center;
+}
+.buttons-container__btn {
+  border: none;
+  border-radius: 35px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  transition: background 0.2s;
+}
+
+.dark {
+  background: #363848;
+  flex-basis: 45px;
+  color: #f0f0f0;
+}
+
+.orange {
+  background: var(--orange);
+  color: var(--white);
+  width: 45px;
+  font-size: 32px;
+}
+
+.gray {
+  background: var(--gray);
+  color: var(--black);
+  font-size: 28px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* For Large screens  */
+@media screen and (min-width: 400px) {
+  .btn-numbers {
+    flex-grow: 1;
+    flex-basis: 249px;
+  }
+
+  .gap-20 {
+    gap: 20px;
+  }
+  .gap-15 {
+    gap: 15px;
+  }
+
+  .dark {
+    background: #363848;
+    flex-basis: 65px;
+    color: #f0f0f0;
+  }
+}
